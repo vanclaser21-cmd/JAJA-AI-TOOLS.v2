@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JAJA AI TOOLS - Character Builder</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- ========================= -->
+    <!-- HEADER -->
+    <!-- ========================= -->
+
+    <header class="header">
+
+    <img src="../assets/header.png" class="header-banner">
+
+</header>
+
+<!-- ========================= -->
+<!-- MENU BAR -->
+<!-- ========================= -->
+
+<nav class="menu-bar">
+
+    <a href="character-generator.html" class="active">
+    🧍 Character Generator
+</a>
+
+    <a href="#">
+        🎬 Motion Control
+    </a>
+
+    <a href="prompt-library.html">
+⚡ Prompt Siap Pakai
+</a>
+
+    <a href="../index.html">
+    🏠 Home
+</a>
+
+</nav>
+
+    <!-- ========================= -->
+    <!-- MAIN -->
+    <!-- ========================= -->
+
+    <div class="main">
+
+        <!-- ========================= -->
+        <!-- LEFT PANEL -->
+        <!-- ========================= -->
+
+        <div class="left-panel">
+
+            <!-- Upload -->
+
+            <div class="card">
+
+                <h2>Upload Reference</h2>
+
+                <label class="upload-box">
+
+                    <input
+type="file"
+id="imageUpload"
+accept="image/*"
+>
+
+                    <div>
+
+                        <h3>🖼</h3>
+
+                        <p>Click or Drop Image Here</p>
+
+                        <small>PNG • JPG • WEBP</small>
+
+                    </div>
+
+                </label>
+
+            </div>
+
+            <!-- Identity -->
+
+            <div class="card">
+
+                <h2>Identity</h2>
+
+                <select id="negara"></select>
+
+                <select id="ras"></select>
+
+                <select id="gender"></select>
+
+                <select id="umur"></select>
+
+            </div>
+
+            <!-- Appearance -->
+
+            <div class="card">
+
+                <h2>Appearance</h2>
+
+                <select id="rambut"></select>
+
+                <select id="warnaRambut"></select>
+
+                <select id="outfit"></select>
+
+            </div>
+
+            <!-- Camera -->
+
+            <div class="card">
+
+                <h2>Camera</h2>
+
+                <select id="lokasi"></select>
+
+                <select id="lighting"></select>
+
+                <select id="kamera"></select>
+
+                <select id="quality">
+
+                    <option>Fast</option>
+
+                    <option>Detailed</option>
+
+                    <option>Ultra Detailed</option>
+
+                    <option>Cinematic</option>
+
+                    <option>Hyper Realistic</option>
+
+                </select>
+
+            </div>
+
+        </div>
+
+        <!-- ========================= -->
+        <!-- RIGHT PANEL -->
+        <!-- ========================= -->
+
+        <div class="right-panel">
+
+            <!-- Character Preview -->
+
+            <div class="card preview-card">
+
+                <h2>Character Preview</h2>
+
+                <div class="preview-avatar">
+
+<img
+id="previewImage"
+src=""
+style="display:none;width:220px;height:220px;object-fit:cover;border-radius:20px;"
+>
+
+<div id="previewIcon" style="font-size:90px;">
+
+👤
+
+</div>
+
+</div>
+
+                <div class="preview-info">
+
+                    <p><strong>🌍 Negara :</strong> <span id="previewNegara">Indonesia</span></p>
+
+                    <p><strong>👤 Ras :</strong> <span id="previewRas">Sunda</span></p>
+
+                    <p><strong>🚹 Gender :</strong> <span id="previewGender">Cowok</span></p>
+
+                    <p><strong>🎂 Umur :</strong> <span id="previewUmur">18-25</span></p>
+
+                    <p><strong>💇 Rambut :</strong> <span id="previewRambut">Short Hair</span></p>
+
+                    <p><strong>🎨 Warna :</strong> <span id="previewWarna">Black</span></p>
+
+                    <p><strong>👕 Outfit :</strong> <span id="previewOutfit">Casual</span></p>
+
+                    <p><strong>📍 Lokasi :</strong> <span id="previewLokasi">Bedroom</span></p>
+
+                    <p><strong>💡 Lighting :</strong> <span id="previewLighting">Natural</span></p>
+
+                    <p><strong>📷 Kamera :</strong> <span id="previewKamera">Close Up</span></p>
+
+                    <p><strong>⭐ Quality :</strong> <span id="previewQuality">Fast</span></p>
+
+                </div>
+
+            </div>
+
+            <!-- Prompt -->
+
+            <div class="card">
+
+                <h2>Generated Prompt</h2>
+
+                <textarea
+                id="hasil"
+                placeholder="Prompt akan muncul di sini..."
+                ></textarea>
+
+                <div class="button-group">
+
+                    <button id="generateBtn">
+
+                        🚀 Generate
+
+                    </button>
+
+                    <button id="copyBtn">
+
+                        📋 Copy
+
+                    </button>
+
+                    <button id="exportBtn">
+
+                        💾 Export TXT
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="../data/data.js"></script>
+
+<script src="../js/script.js"></script>
+
+</body>
+</html>

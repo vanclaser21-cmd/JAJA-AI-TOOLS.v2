@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>
+JAJA AI TOOLS - Prompt Siap Pakai
+</title>
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+<link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" href="../css/style.css">
+
+<link rel="stylesheet" href="../css/prompt-library.css">
+
+
+</head>
+
+
+<body>
+
+
+<div class="container">
+
+
+<header class="hero">
+
+<img src="../assets/header.png" class="hero-banner">
+
+</header>
+
+
+<!-- ========================= -->
+<!-- MENU BAR -->
+<!-- ========================= -->
+
+<nav class="menu-bar">
+
+
+    <a href="character-generator.html">
+    🧍 Character Generator
+    </a>
+
+
+    <a href="#">
+    🎬 Motion Control
+    </a>
+
+
+    <a href="prompt-library.html" class="active">
+    ⚡ Prompt Siap Pakai
+    </a>
+
+
+    <a href="../index.html">
+    🏠 Home
+    </a>
+
+
+</nav>
+
+<section class="prompt-library">
+
+
+<div class="prompt-panel">
+
+
+<div class="card">
+
+
+<h2>
+🌐 Bahasa Prompt
+</h2>
+
+
+<select id="language">
+
+<option value="indonesia">
+🇮🇩 Indonesia
+</option>
+
+
+<option value="english">
+🇺🇸 English
+</option>
+
+
+</select>
+
+
+</div>
+
+
+
+
+<div class="card">
+
+
+<h2>
+⚡ Pilih Prompt
+</h2>
+
+
+<select id="category">
+
+
+<option value="motionDetail">
+🎬 Motion Control Detail
+</option>
+
+
+<option value="motionSimple">
+🎥 Motion Control Sederhana
+</option>
+
+
+<option value="faceSwap">
+🎭 Ganti Wajah Avatar
+</option>
+
+
+<option value="faceLighting">
+💡 Natural Face Lighting
+</option>
+
+
+<option value="replaceBackground">
+🌍 Ganti Tempat / Background
+</option>
+
+
+<option value="backgroundLighting">
+🏠 Lighting Ruangan
+</option>
+
+
+<option value="avatarCloseUp">
+🧍 Avatar Close Up
+</option>
+
+
+<option value="avatarFullBody">
+🚶 Avatar Full Body
+</option>
+
+
+<option value="cosplay">
+👘 Cosplay
+</option>
+
+
+<option value="outfitPoseBackground">
+✨ Outfit + Pose + Background
+</option>
+
+
+<option value="extendMotion">
+🔗 Sambung Video Motion
+</option>
+
+
+</select>
+
+
+</div>
+
+
+</div>
+
+<div class="prompt-result card">
+
+
+<h2 id="promptTitle">
+
+🎬 Motion Control Detail
+
+</h2>
+
+
+
+<textarea id="promptText" readonly>
+
+</textarea>
+
+
+
+<div class="button-group">
+
+
+<button id="copyPrompt">
+
+📋 COPY PROMPT
+
+</button>
+
+
+</div>
+
+
+</div>
+
+
+
+</section>
+
+
+
+</div>
+
+
+
+<script src="../js/prompt-data.js"></script>
+
+<script src="../js/prompt-library.js"></script>
+
+
+</body>
+
+</html>

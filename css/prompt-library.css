@@ -1,0 +1,222 @@
+*{
+
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Sora',sans-serif;
+
+}
+
+
+body{
+
+background:#020617 url("../assets/background.png") center/cover fixed no-repeat;
+
+min-height:100vh;
+
+padding:40px;
+
+color:white;
+
+}
+
+
+
+.container{
+
+max-width:1450px;
+
+margin:auto;
+
+}
+
+
+
+/* =====================
+HEADER
+===================== */
+
+
+.hero{
+
+margin-bottom:30px;
+
+padding:6px;
+
+border-radius:26px;
+
+background:linear-gradient(
+90deg,
+rgba(53,185,255,.08),
+rgba(0,225,255,.18),
+rgba(53,185,255,.08)
+);
+
+box-shadow:
+0 0 45px rgba(53,185,255,.15);
+
+}
+
+
+
+.hero-banner{
+
+width:100%;
+
+display:block;
+
+border-radius:22px;
+
+border:1px solid rgba(53,185,255,.28);
+
+box-shadow:
+0 0 30px rgba(53,185,255,.18),
+0 15px 40px rgba(0,0,0,.45);
+
+}
+
+
+
+/* =====================
+MAIN CONTAINER
+===================== */
+
+
+.prompt-library{
+
+display:grid;
+
+grid-template-columns:350px 1fr;
+
+gap:30px;
+
+margin-top:40px;
+
+}
+
+
+
+.card{
+
+background:rgba(15,23,42,.85);
+
+border:1px solid rgba(56,189,248,.18);
+
+border-radius:22px;
+
+padding:25px;
+
+box-shadow:
+
+0 0 30px rgba(56,189,248,.12);
+
+backdrop-filter:blur(12px);
+
+}
+
+/* =====================
+PROMPT CONTROL
+===================== */
+
+
+.prompt-library h2{
+
+font-family:'Oxanium',sans-serif;
+
+font-size:28px;
+
+color:#38bdf8;
+
+letter-spacing:2px;
+
+margin-bottom:15px;
+
+}
+
+
+
+select{
+
+width:100%;
+
+padding:12px 15px;
+
+margin-top:10px;
+
+background:#0f172a;
+
+color:white;
+
+border:1px solid rgba(56,189,248,.35);
+
+border-radius:12px;
+
+font-family:'Sora',sans-serif;
+
+font-size:15px;
+
+cursor:pointer;
+
+outline:none;
+
+}
+
+
+
+select:hover{
+
+border-color:#38bdf8;
+
+box-shadow:0 0 20px rgba(56,189,248,.25);
+
+}
+
+
+
+textarea{
+
+width:100%;
+
+height:420px;
+
+margin-top:20px;
+
+padding:20px;
+
+resize:none;
+
+background:rgba(2,6,23,.85);
+
+color:#e0f2fe;
+
+border:1px solid rgba(56,189,248,.3);
+
+border-radius:18px;
+
+font-family:'Sora',sans-serif;
+
+font-size:15px;
+
+line-height:1.7;
+
+box-shadow:
+
+inset 0 0 25px rgba(56,189,248,.08),
+
+0 0 25px rgba(56,189,248,.12);
+
+}
+
+
+
+textarea:focus{
+
+outline:none;
+
+border-color:#38bdf8;
+
+box-shadow:
+
+0 0 30px rgba(56,189,248,.35);
+
+}
