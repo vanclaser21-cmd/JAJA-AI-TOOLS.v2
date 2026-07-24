@@ -114,7 +114,40 @@ Outfit harus mengikuti bentuk tubuh secara alami dengan pencahayaan dan lipatan 
 
 Background harus menyatu dengan pencahayaan, perspektif, warna ruangan, dan atmosfer.
 
-Hasil akhir harus realistis, natural, fotorealistik, sangat detail, tanpa deformasi, tanpa perubahan identitas karakter, dan seluruh elemen menyatu sempurna.`
+Hasil akhir harus realistis, natural, fotorealistik, sangat detail, tanpa deformasi, tanpa perubahan identitas karakter, dan seluruh elemen menyatu sempurna.`,
+
+sceneLock:`Animasikan @Scene Reference
+
+ADEGAN :
+
+(PASTE STORYBOARD DI SINI)
+
+tanpa perpindahan atau mengubah arah kamera dari si karakter utama pria.
+kamera terus mengikuti karakter utama pria tanpa ada perpindahan scene ataupun cut scene.
+buat dengan video cinematic, (tergantung video yang dibuat), dengan durasi (disesuaikan sendiri) detik tanpa cut scene.
+
+buat setting tempat seperti yang terlihat di @Scene Reference.
+
+tanpa merubah apapun,
+tanpa menambah hal yang tidak perlu,
+tanpa mengganti hal yang tidak diminta,
+kunci perintah dan ikuti perintah dengan konsisten.
+
+gunakan gambar @Scene Reference sebagai frame pertama (first frame) yang terkunci, bukan hanya sebagai referensi gaya.
+
+tanpa merubah postur karakter,
+tanpa merubah wajah karakter,
+tanpa merubah setting tempat,
+tanpa merubah outfit,
+tanpa merubah gaya rambut,
+tanpa merubah warna rambut,
+buat semua konsisten.
+
+gunakan referensi wajah pria @Character Reference.
+gunakan referensi outfit pria @Outfit Reference.`
+,
+
+flowLock: `Pastikan mengikuti seluruh instruksi yang telah saya berikan.`
 
 },
 
@@ -233,7 +266,42 @@ The outfit must naturally follow the body shape with realistic fabric folds, lig
 
 Blend the background with realistic lighting, perspective, atmosphere, and room colors.
 
-The final result must be realistic, natural, photorealistic, highly detailed, with perfect identity consistency and seamless integration of every visual element.`
+The final result must be realistic, natural, photorealistic, highly detailed, with perfect identity consistency and seamless integration of every visual element.`,
+
+sceneLock: `Animate @Scene Reference
+
+SCENE :
+
+(PASTE STORYBOARD HERE)
+
+without moving or changing the camera direction from the main male character.
+
+the camera continuously follows the main male character without any scene transition or cut scene.
+
+create a cinematic video, (depending on the desired concept), with a duration of (adjust as needed) seconds without any cut scene.
+
+create the environment exactly as shown in @Scene Reference.
+
+without changing anything,
+without adding unnecessary elements,
+without replacing anything that was not requested,
+lock every instruction and follow every instruction consistently.
+
+use @Scene Reference as the locked first frame, not just as a style reference.
+
+without changing the character's body posture,
+without changing the character's face,
+without changing the environment,
+without changing the outfit,
+without changing the hairstyle,
+without changing the hair color,
+keep everything consistent.
+
+use @Character Reference as the male face reference.
+
+use @Outfit Reference as the male outfit reference.`,
+
+flowLock: `Make sure to follow every instruction I have provided.`
 
 }
 
