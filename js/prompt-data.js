@@ -147,7 +147,11 @@ gunakan referensi wajah pria @Character Reference.
 gunakan referensi outfit pria @Outfit Reference.`
 ,
 
-flowLock: `Pastikan mengikuti seluruh instruksi yang telah saya berikan.`
+flowLock: `Pastikan mengikuti seluruh instruksi yang telah saya berikan.`,
+
+identityLock:`gunakan wajah karkter sheet yang barusan saya upload menjadi pemeran utama dalam (disesuaikan dengan kebutuhan), dan gambar full body menjadi refrensi outfit yang akan terus di pake dalam (disesuaikan dengan kebutuhan) sebelum saya memberi perintah untuk di rubah, jangan pernah di ganti tanpa perintah dari saya.
+
+jadi untuk kedepannya setiap kali saya membuat gambar/video disini, pastikan karakter utama memiliki wajah dan penampilan sesuai dengan gambar yang saya kirim, dan kita akan memanggil karakter kita dengan nama (nama karakter kita).`
 
 },
 
@@ -301,7 +305,11 @@ use @Character Reference as the male face reference.
 
 use @Outfit Reference as the male outfit reference.`,
 
-flowLock: `Make sure to follow every instruction I have provided.`
+flowLock: `Make sure to follow every instruction I have provided.`,
+
+identityLock: `Use the character sheet face image that I have just uploaded as the main character in (adjust according to your needs), and use the full body image as the outfit reference that will continue to be used in (adjust according to your needs) until I specifically instruct you to change it. Never replace it without my permission.
+
+From this point forward, every time I create an image or video here, make sure the main character always keeps the same face and appearance as the images I uploaded. We will refer to this character by the name (character name).`
 
 }
 
