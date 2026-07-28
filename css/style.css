@@ -527,3 +527,123 @@ height:380px;
 }
 
 }
+
+/* ===========================
+   CONTENT FACTORY
+=========================== */
+
+.factory-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+gap:25px;
+
+margin-top:35px;
+
+}
+
+.factory-card{
+
+background:#161616;
+
+border:1px solid rgba(255,255,255,.08);
+
+border-radius:20px;
+
+padding:30px;
+
+transition:.25s;
+
+text-decoration:none;
+
+color:#fff;
+
+}
+
+.factory-card:hover{
+
+transform:translateY(-6px);
+
+border-color:hsl(199, 100%, 50%);
+
+box-shadow:0 0 25px rgba(255,213,79,.25);
+
+}
+
+.factory-card .icon{
+
+font-size:42px;
+
+margin-bottom:20px;
+
+}
+
+.factory-card h2{
+
+margin-bottom:10px;
+
+font-size:22px;
+
+}
+
+.factory-card p{
+
+opacity:.75;
+
+line-height:1.6;
+
+}
+
+/* ===========================
+WORKFLOW NAVIGATION
+=========================== */
+
+.workflow-nav{
+
+display:flex;
+
+justify-content:space-between;
+
+margin-top:40px;
+
+}
+
+.back-btn,
+.next-btn{
+
+padding:14px 26px;
+
+border-radius:12px;
+
+text-decoration:none;
+
+font-weight:600;
+
+transition:.25s;
+
+}
+
+.back-btn{
+
+background:#2b2b2b;
+
+color:#fff;
+
+}
+
+.next-btn{
+
+background:#FFD54F;
+
+color:#111;
+
+}
+
+.back-btn:hover,
+.next-btn:hover{
+
+transform:translateY(-3px);
+
+}
