@@ -82,23 +82,55 @@ JAJA AI TOOLS - Pabrik Konten
 
 </div>
 
-<div class="workflow-box">
+<div class="workflow-info">
 
-     <div class="step-number" id="stepNumber"></div>
+<b>ISI SEMUA YANG PERLU DI ISI YA BOSKUUU</b>
 
-     <h1 class="step-title" id="instructionTitle"></h1>
+<br><br>
 
-     <div class="workflow-guide" id="workflowGuide">
+Isi semua kolom yang tersedia.
+Kolom yang bertanda <b>(Opsional)</b> boleh dikosongkan.
 
-📌 Panduan akan muncul di sini.
+Setelah selesai, tekan <b>NEXT</b> untuk melanjutkan ke tahap berikutnya.
 
 </div>
 
-    <textarea id="promptText" readonly></textarea>
+</div>
 
-    <button id="copyPrompt" class="copy-btn">
-        👇 PENCET INI AJA KAWAN
-    </button>
+    <div class="project-form">
+
+<label>Judul Project</label>
+<input id="projectTitle" type="text">
+
+<label>Lirik Lagu</label>
+<textarea id="lyrics"></textarea>
+
+<label>Genre</label>
+<select id="genre">
+
+<option>Cinematic</option>
+<option>Drama</option>
+<option>Romance</option>
+<option>Action</option>
+<option>Fantasy</option>
+
+</select>
+
+<label>Song Duration</label>
+
+<input
+id="duration"
+type="text"
+placeholder="Contoh : 3:53">
+
+<label>Visual Style</label>
+<input id="visualStyle" type="text">
+
+<label>Ide Cerita (Opsional)</label>
+<textarea id="storyIdea"></textarea>
+
+
+    </div>
 
     <div class="workflow-nav">
 
@@ -116,8 +148,9 @@ NEXT ➜
 
 </div>
 
-<script src="../js/music/lock-scene-structure-data.js"></script>
+<script src="../js/music/project-start-data.js"></script>
 <script src="../js/music/engine.js"></script>
+<script src="../js/music/project-start.js"></script>
 
 </body>
 

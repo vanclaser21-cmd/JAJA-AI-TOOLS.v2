@@ -1,31 +1,8 @@
 const workflow = {
 
-step:7,
+step:4,
 
 total:12,
-
-instruction:
-"COPY PROMPT LALU PASTE KE CHATGPT",
-
-guide:`
-
-📌 SCENE STRUCTURE
-
-AI mulai membagi cerita menjadi beberapa scene.
-
-✔ Pastikan urutan scene sudah benar.
-
-✔ Langsung Revisi jika ada yang tidak sesuai.
-
-✔ Fokus mengecek alur cerita.
-
-✔ Kalo semuanya sudah oke, lanjut ke tahap berikutnya.
-
-🎯 Tujuan:
-
-Membuat struktur scene final sebelum dikunci.
-
-`,
 
 copyText:
 "👇 PENCET INI AJA KAWAN",
@@ -35,78 +12,240 @@ copiedText:
 
 prompt:`
 
-Berdasarkan seluruh data project yang sudah disetujui.
+You are continuing an existing AI Short Drama project.
 
-Gunakan:
+This is NOT a new project.
 
-- Story Lock
-- Character Lock
-- Outfit Lock
-- Location Lock
-- Visual Style Lock
-- Ending Lock
+Semua file dan gambar yang saya upload adalah data resmi dari project sebelumnya.
 
-Tolong buatkan SCENE DEVELOPMENT lengkap.
+Tugas pertama kamu bukan membuat sesuatu.
 
-Tujuan:
+Tugas pertama kamu adalah mengecek data project.
 
-Melihat keseluruhan cerita dan seluruh shot
-sebelum masuk ke tahap produksi.
+==================================================
 
-Aturan:
+PROJECT CHECK
 
-- 1 Shot = 1 Action
-- Single Shot Only
-- AI Friendly
-- Music Video = ±4 detik per shot
-- Short Drama = ±8 detik per shot
+Baca semua file yang saya upload.
 
-Untuk setiap scene tampilkan:
+Baca semua gambar yang saya upload.
 
-SCENE TITLE
+Perhatikan:
 
-DURATION
+1. Isi file.
 
-LOCATION
+2. Nama file.
 
-SCENE PURPOSE
+Nama file menunjukkan fungsi dari data tersebut.
 
-VISUAL STYLE
+==================================================
 
-Kemudian langsung lanjutkan dengan seluruh shot.
+FILE PROJECT
 
-Format setiap shot:
+PROJECT_DATA.txt
 
-SHOT NUMBER
+Berisi:
 
-TITLE
+- Cerita utama
+- Dunia cerita
+- Karakter
+- Kepribadian
+- Aturan produksi
+- Data project
 
-DURATION
 
-CHARACTER
+MASTER_STORYBOARD.txt
 
-LOCATION
+Berisi:
 
-VISUAL DESCRIPTION
+- Episode
+- Scene
+- Shot
+- Dialog
+- Kamera
+- Visual
+- Prompt produksi
 
-ACTION
+==================================================
 
-CAMERA DIRECTION
+DATA GAMBAR
 
-MOOD
+PEMERAN UTAMA.png
 
-STORY MESSAGE
+= Referensi wajah dan karakter utama.
 
-PENTING:
 
-Jangan membuat Image Prompt.
+PEMERAN PENDUKUNG 01.png
 
-Jangan membuat Video Prompt.
+= Referensi karakter pendukung.
 
-Tampilkan seluruh scene sampai akhir.
 
-Saya ingin melakukan revisi terlebih dahulu
-sebelum masuk ke tahap storyboard produksi.
+OUTFIT.png
+
+= Referensi pakaian karakter.
+
+
+SETTING TEMPAT.png
+
+= Referensi lokasi kejadian.
+
+
+==================================================
+
+HASIL PRODUKSI SEBELUMNYA
+
+Contoh:
+
+S1 SHOT 1.png
+
+S1 SHOT 2.png
+
+S1 SHOT 3.png
+
+S2 SHOT 1.png
+
+S2 SHOT 2.png
+
+
+Semua gambar tersebut adalah referensi produksi sebelumnya.
+
+Gunakan untuk menjaga:
+
+- wajah tetap sama
+- pakaian tetap sama
+- tempat tetap sama
+- warna tetap sama
+- gaya visual tetap sama
+
+==================================================
+
+ATURAN OUTFIT
+
+Jika file OUTFIT.png tidak ada,
+
+gunakan pakaian yang terlihat pada:
+
+PEMERAN UTAMA.png
+
+sebagai outfit tetap.
+
+Jangan mengganti.
+
+Jangan mendesain ulang.
+
+Jangan mengubah warna.
+
+==================================================
+
+CEK DATA PROJECT
+
+Sebelum melanjutkan tampilkan:
+
+================================
+
+STATUS PROJECT
+
+
+✓ PROJECT_DATA.txt
+
+✓ MASTER_STORYBOARD.txt
+
+✓ PEMERAN UTAMA.png
+
+✓ OUTFIT.png
+
+✓ SETTING TEMPAT.png
+
+
+================================
+
+
+Jika ada data yang kurang,
+
+jelaskan:
+
+Data yang tersedia.
+
+Data yang hilang.
+
+Apakah project masih bisa dilanjutkan.
+
+Jangan langsung berhenti.
+
+==================================================
+
+ATURAN KONSISTENSI
+
+Jangan membuat ulang.
+
+Jangan mengganti.
+
+Jangan memperbaiki.
+
+Jangan mengubah:
+
+- Wajah pemeran
+- Rambut
+- Umur
+- Bentuk tubuh
+- Outfit
+- Lokasi
+- Cerita
+- Gaya kamera
+- Gaya visual
+- Warna
+
+Semua produksi berikutnya harus mengikuti data yang sudah ada.
+
+==================================================
+
+JIKA ADA GAMBAR PRODUKSI SEBELUMNYA
+
+Tentukan:
+
+Episode terakhir:
+
+Scene terakhir:
+
+Shot terakhir:
+
+Produksi berikutnya:
+
+Contoh:
+
+Episode:
+01
+
+Scene:
+03
+
+Shot terakhir:
+04
+
+
+Lanjut berikutnya:
+
+Scene:
+03
+
+Shot:
+05
+
+==================================================
+
+PENTING
+
+Jangan membuat:
+
+- cerita baru
+- karakter baru
+- storyboard baru
+- prompt baru
+
+
+Jangan mulai produksi.
+
+Tunggu instruksi berikutnya.
 
 
 `

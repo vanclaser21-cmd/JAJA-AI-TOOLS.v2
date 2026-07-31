@@ -228,3 +228,72 @@ color:#ffc107;
 
 }
 
+.project-form label{
+
+display:block;
+margin-top:20px;
+margin-bottom:8px;
+
+font-size:16px;
+font-weight:600;
+
+}
+
+
+.project-form input,
+.project-form select,
+.project-form textarea{
+
+width:100%;
+
+padding:15px;
+
+border-radius:12px;
+
+margin-bottom:10px;
+
+font-size:15px;
+
+}
+
+
+.project-form textarea{
+
+min-height:180px;
+
+}
+
+
+.project-form{
+
+max-width:900px;
+
+margin:auto;
+
+}
+
+.workflow-info{
+
+margin:25px 0;
+
+padding:18px 22px;
+
+background:#171717;
+
+border:1px solid rgba(56,189,248,.25);
+
+border-radius:16px;
+
+font-size:15px;
+
+line-height:1.8;
+
+color:#e8e8e8;
+
+}
+
+.workflow-info b{
+
+color:#38bdf8;
+
+}

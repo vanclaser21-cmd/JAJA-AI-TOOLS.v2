@@ -1,31 +1,7 @@
 const workflow = {
 
-step:6,
-
-total:12,
-
-instruction:
-"COPY PROMPT LALU PASTE KE CHATGPT",
-
-guide:`
-
-📌 PROJECT DATA FILE
-
-AI akan membuat MASTER DATA PROJECT.
-
-✔ Simpan hasil output ini.
-
-✔ Jangan ubah isi file.
-
-✔ File ini akan dipakai oleh seluruh workflow berikutnya.
-
-⚠ Setelah file ini dibuat, semua STEP berikutnya akan mengacu ke file ini.
-
-🎯 Tujuan:
-
-Membuat Master Project Data sebagai pusat seluruh informasi project.
-
-`,
+step:3,
+total:4,
 
 copyText:
 "👇 PENCET INI AJA KAWAN",
@@ -35,31 +11,73 @@ copiedText:
 
 prompt:`
 
-Buatkan PROJECT DATA FILE
-dalam format TXT siap download.
+====================================================
+OUTPUT PRODUCTION RULES
+====================================================
 
-File ini digunakan untuk:
+Karena MASTER STORYBOARD memiliki output yang sangat panjang, storyboard WAJIB dibagi menjadi beberapa PART.
 
-- Pindah chat
-- Pindah AI
-- Melanjutkan project
+Setiap PART hanya boleh berisi maksimal 3 SCENE.
 
-Jangan membuat storyboard.
+Jangan pernah memotong output di tengah SHOT.
 
-Masukkan:
+Jangan pernah memotong output di tengah SCENE.
 
-- Story Lock
-- Character Lock
-- Outfit Lock
-- Location Lock
-- Visual Style Lock
-- Ending Lock
+Jika output ChatGPT sudah mendekati batas maksimal, AI WAJIB:
 
-📄 OUTPUT
+1. Menyelesaikan SHOT yang sedang dikerjakan.
+2. Menyelesaikan SCENE tersebut.
+3. Berhenti setelah SCENE selesai.
+4. Jangan mulai SCENE berikutnya.
 
-PROJECT_DATA_FILE.txt
+====================================================
 
+Setelah SCENE terakhir pada PART tersebut selesai, tampilkan:
 
+========================================
+
+END OF
+MASTER STORYBOARD
+
+PART XX
+
+Progress:
+
+Episode : XX
+Scene selesai : XX
+Shot terakhir : XX
+
+Silakan ketik:
+
+"Lanjut"
+
+untuk membuat PART berikutnya.
+
+========================================
+
+====================================================
+
+Saat user mengetik:
+
+"Lanjut"
+
+AI harus langsung melanjutkan dari SCENE berikutnya.
+
+Jangan mengulang scene sebelumnya.
+
+Jangan mengubah cerita.
+
+Jangan mengubah karakter.
+
+Jangan mengubah production rules.
+
+Jangan membuat cerita baru.
+
+Gunakan seluruh PROJECT_DATA.txt sebagai acuan utama.
+
+====================================================
+
+Seluruh PART harus menggunakan format yang sama hingga storyboard selesai.
 `
 
 };

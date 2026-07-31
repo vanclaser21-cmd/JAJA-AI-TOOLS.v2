@@ -82,43 +82,139 @@ JAJA AI TOOLS - Pabrik Konten
 
 </div>
 
-<div class="workflow-box">
+<div class="workflow-info">
 
-     <div class="step-number" id="stepNumber"></div>
+<b>ISI SEMUA YANG PERLU DI ISI YA BOSKUUU</b>
 
-     <h1 class="step-title" id="instructionTitle"></h1>
+<br><br>
 
-     <div class="workflow-guide" id="workflowGuide">
-
-📌 Panduan akan muncul di sini.
+ISI AJA KOLOM YANG ADA KAWAN.
+KALO UDAH TINGGAL <b>NEXT</b> AJA BUAT LANJUT KE STEP SELANJUTNYA.
 
 </div>
 
-    <textarea id="promptText" readonly></textarea>
+</div>
 
-    <button id="copyPrompt" class="copy-btn">
-        👇 PENCET INI AJA KAWAN
-    </button>
+    <div class="project-form">
 
-    <div class="workflow-nav">
+<label>Judul Project</label>
+<input id="projectTitle" type="text">
 
-        <a href="music-clip-maker.html" class="back-btn">
-            ⬅ BACK
-        </a>
+<label>Lirik Lagu</label>
+<textarea id="lyrics"></textarea>
 
-        <a href="lyric-analysis.html" class="next-btn">
-            NEXT ➜
-        </a>
+<label>Genre</label>
+<select id="genre">
+
+<option>Cinematic</option>
+<option>Drama</option>
+<option>Romance</option>
+<option>Action</option>
+<option>Fantasy</option>
+
+</select>
+
+<label>Song Duration</label>
+
+<input
+id="duration"
+type="text"
+placeholder="Contoh : 3:53">
+
+<label>Aspect Ratio</label>
+
+<select id="aspectRatio">
+
+<option>9:16 (Vertical)</option>
+
+<option>16:9 (Horizontal)</option>
+
+</select>
+
+
+<label>Scene Structure</label>
+
+<select id="sceneStructure">
+
+<option>1 Scene = 1 Shot</option>
+
+<option>1 Scene = 2 Shot</option>
+
+<option>1 Scene = 3 Shot</option>
+
+<option>1 Scene = 4 Shot</option>
+
+<option>Custom</option>
+
+</select>
+
+<label
+id="customShotLabel"
+style="display:none;">
+
+Jumlah Shot per Scene
+
+</label>
+
+<input
+
+id="customShot"
+
+type="number"
+
+min="1"
+
+max="20"
+
+style="display:none;"
+
+placeholder="Contoh : 5">
+
+</select>
+
+
+<label>Shot Duration</label>
+
+<select id="shotDuration">
+
+<option>4 Seconds</option>
+
+<option>6 Seconds</option>
+
+<option>8 Seconds</option>
+
+<option>10 Seconds</option>
+
+</select>
+
+<label>Visual Style</label>
+<input id="visualStyle" type="text">
+
+<label>Ide Cerita (Opsional)</label>
+<textarea id="storyIdea"></textarea>
+
 
     </div>
+
+<div class="workflow-nav">
+
+    <a href="music-clip-maker.html" class="back-btn">
+        ⬅ BACK
+    </a>
+
+    <a href="#" id="nextStep" class="next-btn">
+        NEXT ➜
+    </a>
+
+</div>
 
 </div>
 
 </div>
 
 <script src="../js/music/project-start-data.js"></script>
-
 <script src="../js/music/engine.js"></script>
+<script src="../js/music/project-start.js"></script>
 
 </body>
 

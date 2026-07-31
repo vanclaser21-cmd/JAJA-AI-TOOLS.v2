@@ -2,10 +2,9 @@
 PROJECT SESSION
 ========================== */
 
-const STORAGE_KEY = "jaja_music_project";
-function loadSession(){
-
-    const data = localStorage.getItem(STORAGE_KEY);
+const DRAMA_STORAGE_KEY = "jaja_drama_project";
+function loadDramaSession(){
+    const data = localStorage.getItem(DRAMA_STORAGE_KEY);
 
     if(data){
 
@@ -35,25 +34,18 @@ function loadSession(){
 
 }
 
-function saveSession(data){
-
+function saveDramaSession(data){
     localStorage.setItem(
-
-        STORAGE_KEY,
-
+        DRAMA_STORAGE_KEY,
         JSON.stringify(data)
-
     );
-
 }
 
-function clearSession(){
-
-    localStorage.removeItem(STORAGE_KEY);
-
+function clearDramaSession(){
+    localStorage.removeItem(DRAMA_STORAGE_KEY);
 }
 
-let session = loadSession();
+let dramaSession = loadDramaSession();
 
 /* ==========================
 WORKFLOW ENGINE
@@ -91,43 +83,50 @@ if(promptText){
 let finalPrompt = workflow.prompt;
 
 finalPrompt =
-finalPrompt.replace(/{{projectTitle}}/g,session.title);
+finalPrompt.replace(/{{storyIdea}}/g, dramaSession.storyIdea || "");
 
 finalPrompt =
-finalPrompt.replace(/{{lyrics}}/g,session.lyrics);
+finalPrompt.replace(/{{storyCategory}}/g, dramaSession.storyCategory || "");
 
 finalPrompt =
-finalPrompt.replace(/{{genre}}/g,session.genre);
+finalPrompt.replace(/{{storySubCategory}}/g, dramaSession.storySubCategory || "");
 
 finalPrompt =
-finalPrompt.replace(/{{aspectRatio}}/g,session.aspectRatio);
+finalPrompt.replace(/{{genre}}/g, dramaSession.genre || "");
 
 finalPrompt =
-finalPrompt.replace(/{{sceneStructure}}/g,session.sceneStructure);
+finalPrompt.replace(/{{episodeCount}}/g, dramaSession.episodeCount || "");
 
 finalPrompt =
-finalPrompt.replace(/{{shotDuration}}/g,session.shotDuration);
+finalPrompt.replace(/{{episodeDuration}}/g, dramaSession.episodeDuration || "");
 
 finalPrompt =
-finalPrompt.replace(/{{duration}}/g,session.duration);
+finalPrompt.replace(/{{aspectRatio}}/g, dramaSession.aspectRatio || "");
 
 finalPrompt =
-finalPrompt.replace(/{{visualStyle}}/g,session.visualStyle);
+finalPrompt.replace(/{{sceneStructure}}/g, dramaSession.sceneStructure || "");
 
 finalPrompt =
-finalPrompt.replace(/{{storyIdea}}/g,session.storyIdea);
+finalPrompt.replace(/{{shotDuration}}/g, dramaSession.shotDuration || "");
 
 finalPrompt =
-finalPrompt.replace(/{{storyCategory}}/g,session.storyCategory);
+finalPrompt.replace(/{{visualStyle}}/g, dramaSession.visualStyle || "");
 
 finalPrompt =
-finalPrompt.replace(/{{storySubCategory}}/g,session.storySubCategory);
+finalPrompt.replace(/{{customEpisode}}/g, dramaSession.customEpisode || "");
 
 finalPrompt =
-finalPrompt.replace(/{{episodeCount}}/g,session.episodeCount);
+finalPrompt.replace(/{{customDuration}}/g, dramaSession.customDuration || "");
 
 finalPrompt =
-finalPrompt.replace(/{{episodeDuration}}/g,session.episodeDuration);
+finalPrompt.replace(/{{customScene}}/g, dramaSession.customScene || "");
+
+finalPrompt =
+finalPrompt.replace(/{{customShot}}/g, dramaSession.customShot || "");
+
+finalPrompt =
+finalPrompt.replace(/{{customVisual}}/g, dramaSession.customVisual || "");
+
 
 promptText.value = finalPrompt;
 

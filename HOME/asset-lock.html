@@ -82,33 +82,246 @@ JAJA AI TOOLS - Pabrik Konten
 
 </div>
 
-<div class="workflow-box">
+<div class="workflow-info">
 
-     <div class="step-number" id="stepNumber"></div>
+<b>ISI SEMUA YANG PERLU DI ISI YA BOSKUUU</b>
 
-     <h1 class="step-title" id="instructionTitle"></h1>
+<br><br>
 
-     <div class="workflow-guide" id="workflowGuide">
+Isi semua kolom yang tersedia.
+Kolom yang bertanda <b>(Opsional)</b> boleh dikosongkan.
 
-📌 Panduan akan muncul di sini.
+Setelah selesai, tekan <b>NEXT</b> untuk melanjutkan ke tahap berikutnya.
 
 </div>
 
-    <textarea id="promptText" readonly></textarea>
+</div>
 
-    <button id="copyPrompt" class="copy-btn">
-        👇 PENCET INI AJA KAWAN
-    </button>
+    <div class="project-form">
+
+<label>Ide Cerita</label>
+
+<textarea
+id="storyIdea"
+placeholder="Ceritakan ide drama kamu...">
+</textarea>
+
+<label>Kategori Cerita</label>
+
+<select id="storyCategory">
+
+<option value="">Pilih Kategori</option>
+
+<option>👔 CEO / Crazy Rich</option>
+
+<option>💔 Pengkhianatan</option>
+
+<option>⚡ Sistem Kehidupan</option>
+
+<option>⚔️ Pendekar / Martial Arts</option>
+
+<option>🩺 Dokter Jenius</option>
+
+<option>🎖️ Pensiunan Tentara / Agen Rahasia</option>
+
+<option>🔥 Balas Dendam</option>
+
+<option>👑 Kerajaan</option>
+
+<option>🎓 Sekolah / Kampus</option>
+
+<option>👨‍👩‍👧 Keluarga / Warisan</option>
+
+</select>
+
+<label>Sub Kategori</label>
+
+<select id="storySubCategory">
+
+<option>Pilih Kategori Dulu</option>
+
+</select>
+
+<label>Genre</label>
+
+<select id="genre">
+
+<option>Drama</option>
+
+<option>Romance</option>
+
+<option>Action</option>
+
+<option>Fantasy</option>
+
+<option>Comedy</option>
+
+<option>Thriller</option>
+
+<option>Horror</option>
+
+</select>
+
+<label>Jumlah Episode</label>
+
+<select id="episodeCount">
+
+<option>10 Episode</option>
+
+<option>20 Episode</option>
+
+<option>30 Episode</option>
+
+<option>40 Episode</option>
+
+<option>50 Episode</option>
+
+<option>Custom</option>
+
+</select>
+
+<div id="customEpisodeWrap" style="display:none;">
+
+<label>Jumlah Episode Custom</label>
+
+<input
+id="customEpisode"
+type="number"
+placeholder="Contoh : 12">
+
+</div>
+
+<label>Durasi Per Episode</label>
+
+<select id="episodeDuration">
+
+<option>3 Menit</option>
+<option>5 Menit</option>
+<option>7 Menit</option>
+<option>10 Menit</option>
+<option>Custom</option>
+
+</select>
+
+<div id="customDurationWrap" style="display:none;">
+
+<label>Durasi Episode Custom</label>
+
+<input
+id="customDuration"
+type="text"
+placeholder="Contoh : 12 Menit">
+
+</div>
+
+<label>Aspect Ratio</label>
+
+<select id="aspectRatio">
+
+<option>16:9</option>
+
+<option>9:16</option>
+
+</select>
+
+<label>Scene Structure</label>
+
+<select id="sceneStructure">
+
+<option>1 Scene = 1 Shot</option>
+
+<option>1 Scene = 2 Shot</option>
+
+<option>1 Scene = 3 Shot</option>
+
+<option>1 Scene = 4 Shot</option>
+
+<option>Custom</option>
+
+</select>
+
+<div id="customSceneWrap" style="display:none;">
+
+<label>Scene Structure Custom</label>
+
+<input
+id="customScene"
+type="text"
+placeholder="Contoh : 1 Scene = 5 Shot">
+
+</div>
+
+<label>Shot Duration</label>
+
+<select id="shotDuration">
+
+<option>4 Seconds</option>
+
+<option>6 Seconds</option>
+
+<option>8 Seconds</option>
+
+<option>10 Seconds</option>
+
+<option>Custom</option>
+
+</select>
+
+<div id="customShotWrap" style="display:none;">
+
+<label>Shot Duration Custom</label>
+
+<input
+id="customShot"
+type="text"
+placeholder="Contoh : 12 Detik">
+
+</div>
+
+<label>Visual Style</label>
+
+<select id="visualStyle">
+
+<option>Realistic</option>
+
+<option>Cinematic</option>
+
+<option>Anime</option>
+
+<option>Pixar</option>
+
+<option>Fantasy</option>
+
+<option>Cyberpunk</option>
+
+<option>Dark</option>
+
+<option>Custom</option>
+
+</select>
+
+<div id="customVisualWrap" style="display:none;">
+
+<label>Visual Style Custom</label>
+
+<input
+id="customVisual"
+type="text"
+placeholder="Masukkan Visual Style">
+
+</div>
 
     <div class="workflow-nav">
 
-<a href="story-lock.html" class="back-btn">
+<a href="short-drama.html" class="back-btn">
 ⬅ BACK
 </a>
 
-<a href="ending-lock.html" class="next-btn">
-NEXT ➜
-</a>
+<button
+    id="nextStep"
+    class="next-btn">
+    NEXT ➜
+</button>
 
 </div>
 

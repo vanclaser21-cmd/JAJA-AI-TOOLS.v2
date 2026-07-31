@@ -2,7 +2,7 @@ const workflow = {
 
 step: 1,
 
-total: 12,
+total: 4,
 
 instruction:
 "COPY PROMPT LALU PASTE KE CHATGPT",

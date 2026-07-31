@@ -1,32 +1,19 @@
 const workflow = {
 
-step: 2,
+step:2,
 
-total: 12,
+total:4,
 
-instruction:
-"COPY PROMPT LALU PASTE KE CHATGPT",
+instruction:"LYRIC ANALYSIS",
 
 guide:`
+Tempel prompt ini ke ChatGPT.
 
-📌 ANALISIS LIRIK PROJECT
+AI akan menganalisis seluruh lirik lagu dan membuat file PROJECT_DATA.txt.
 
-Pada tahap ini:
+Jangan ubah isi file.
 
-- Masukkan lirik final lagu.
-- Pastikan struktur lagu sudah jelas.
-- Pastikan tema utama lagu sudah terkunci.
-
-
-⚠ Jangan membuat storyboard dulu.
-
-⚠ Jangan membuat gambar dulu.
-
-
-🎯 Tujuan:
-
-Membaca emosi, pesan, dan arah visual dari lagu.
-
+Nanti file ini akan dipakai pada langkah berikutnya.
 `,
 
 copyText:
@@ -35,61 +22,82 @@ copyText:
 copiedText:
 "🔥 BERES... TINGGAL TEMPEL KE CHATGPT",
 
-prompt:`
+prompt:`You are a professional Music Video Creative Director.
 
-Saya akan membuat Music Video AI berdasarkan lirik yang saya berikan.
-berikut lirik lagu saya:
+Analyze the song below.
 
-(PASTE LIRIK DISINI)
+DO NOT create storyboard.
 
-Untuk saat ini:
+DO NOT create image prompt.
 
-- Jangan membuat storyboard
-- Jangan membuat scene
-- Jangan membuat shot
-- Jangan membuat prompt gambar
-- Jangan membuat prompt video
+DO NOT create video prompt.
 
-Fokus hanya menganalisa lagu.
+Your ONLY job is creating PROJECT_DATA.txt.
 
-Tolong analisa:
+Analyze:
 
-1. Tema utama lagu
+- Main Theme
+- Emotional Journey
+- Mood
+- Story Direction
+- Character Role
+- Visual Style
+- Ending
+- Production Rules
 
-2. Mood emosional lagu
+Return ONLY this format.
 
-3. Pesan utama lagu
+PROJECT_DATA.txt
 
-4. Potensi cerita yang bisa diangkat menjadi Music Video
+=================================
 
-5. Hubungan antar karakter yang mungkin muncul
+PROJECT TITLE
 
-6. Genre visual yang paling cocok
+SONG ANALYSIS
 
-7. Ending yang paling sesuai dengan pesan lagu
+MAIN STORY
 
-Tampilkan hasil dalam format berikut:
+CHARACTER PROFILE
 
-THEME
+VISUAL STYLE
 
-MOOD
+ENDING
 
-CORE MESSAGE
+PRODUCTION RULES
 
-CHARACTER POTENTIAL
+=================================
 
-VISUAL GENRE
+Do not explain anything outside the file.
 
-STORY POTENTIAL
+SONG INFORMATION
 
-ENDING DIRECTION
+Title:
+{{projectTitle}}
 
-Jangan membuat cerita lengkap terlebih dahulu.
+Genre:
+{{genre}}
 
-Jangan membuat storyboard.
+Duration:
+{{duration}}
 
-Tunggu instruksi saya setelah analisa selesai.
+Visual Style:
+{{visualStyle}}
 
+Story Idea:
+{{storyIdea}}
+
+{{lyrics}}
+
+Production Rules
+
+Aspect Ratio:
+{{aspectRatio}}
+
+Scene Structure:
+{{sceneStructure}}
+
+Shot Duration:
+{{shotDuration}}
 
 `
 
