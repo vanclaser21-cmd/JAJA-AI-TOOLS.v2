@@ -1,0 +1,283 @@
+﻿<!DOCTYPE html>
+<html lang="id"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>JAJA AI TOOLS - Master Production Prompt</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="../css/style.css"><link rel="stylesheet" href="../css/home.css"><link rel="stylesheet" href="../css/workflow.css"><link rel="stylesheet" href="../css/prompt-library.css"></head>
+<body><div class="container"><header class="hero"><img src="../assets/header.png" class="hero-banner"></header><div class="dashboard-grid"><a href="../index.html" class="dash-card"><div class="dash-title">HOME</div></a><a href="ugc-data.html" class="dash-card"><div class="dash-title">UGC KONTEN</div></a><a href="ugc-result.html" class="dash-card"><div class="dash-title">UGC RESULT</div></a><a href="prompt-library.html" class="dash-card"><div class="dash-title">PROMPT SIAP PAKAI</div></a></div><div class="workflow-info"><b>STEP 3</b> <b>MASTER PRODUCTION PROMPT</b><br><br>Prompt produksi yang langsung memanfaatkan data produk dan scene UGC yang telah dibuat.</div><div class="project-form"><label for="productionSceneSelect">PILIH SCENE</label><select id="productionSceneSelect"></select><label>MASTER PRODUCTION PROMPT</label><textarea id="productionPrompt" readonly style="height:460px;"></textarea><div class="workflow-nav"><button class="next-btn" id="copyPrompt" type="button">COPY PROMPT</button><button class="next-btn" id="refreshPrompt" type="button">REFRESH PROMPT</button><a href="ugc-result.html" class="next-btn" style="display:inline-block;text-decoration:none;padding:14px 22px;">KEMBALI KE RESULT</a></div></div></div>
+<script>
+const $ = id => document.getElementById(id);
+let input = {}, result = {};
+
+function read(key) {
+    try { return JSON.parse(localStorage.getItem(key) || '{}'); }
+    catch { return {}; }
+}
+
+function format(value, fallback = 'tidak ditentukan') {
+    return String(value || '').trim() || fallback;
+}
+
+function getCharacterReference() {
+    return localStorage.getItem('jaja_character_result') || localStorage.getItem('jaja_character_data') || '';
+}
+
+function sceneStoryboard(scene) {
+    return `Scene ${scene.scene || 1}
+- Duration: ${format(scene.duration)}
+- Shot type: ${format(scene.shotType)}
+- Camera: ${format(scene.cameraMovement)}
+- Lens and focus: ${format(scene.lens)}; ${format(scene.focus)}
+- Composition / position: ${format(scene.position)}
+- Visual hook: ${format(scene.visualHook)}
+- Action: ${format(scene.productDescription)}; ${format(scene.bodyLanguage)}
+- Emotion: ${format(scene.expression)}
+- Environment: ${format(scene.location)}
+- Lighting: ${format(scene.lighting)}
+- Dialogue: ${scene.dialogue ? scene.dialogue : 'No spoken dialogue; convey the message through visual action only.'}`;
+}
+
+function build(scene) {
+    const characterReference = getCharacterReference();
+    const characterSection = characterReference
+        ? `A character/model reference has been provided. Use that exact person and preserve facial identity, hairstyle, body proportion, skin tone, and overall appearance. Do not replace the character or create a different person.
+
+CHARACTER REFERENCE DATA:
+${characterReference}`
+        : `No character/model reference exists. Create a realistic suitable creator based on the product category, target audience, and content style. Keep the character consistent with the approved storyboard.`;
+    const contentAngle = format(scene.visualHook, format(input.contentStyle));
+    const productionNotes = `Prioritize ${format(scene.productDescription)}. Preserve the approved scene composition, lighting, environment, body language, expression, and dialogue. ${scene.dialogue ? 'Use the dialogue as written; do not rewrite it.' : 'Do not invent spoken dialogue.'}`;
+
+    return `MASTER PRODUCTION PROMPT — UNIVERSAL AI VISUAL CREATION
+
+[ROLE]
+
+You are a professional AI visual director and production artist.
+
+Your task is to create a realistic visual based on the provided production brief.
+
+Follow all instructions exactly.
+
+Do not redesign.
+Do not improvise important elements.
+Do not replace reference objects.
+Do not assume this request is limited to a single medium: the brief must be followed consistently for AI image generation, AI video generation, and other AI visual creation workflows.
+
+==================================================
+1. STORYBOARD LOCK
+==================================================
+
+The storyboard provided below is the final approved production plan.
+
+The storyboard is the highest priority reference.
+
+Rules:
+
+- Follow the selected scene exactly.
+- Do not change its approved order or intent.
+- Do not remove required visual beats.
+- Do not add unapproved scenes, objects, actions, or alternative interpretations.
+- Every visual decision must support the storyboard.
+
+==================================================
+2. PRODUCT REFERENCE LOCK
+==================================================
+
+The product image provided by the user is the ONLY product reference.
+
+Use the exact same product.
+
+Maintain:
+
+- shape
+- size
+- color
+- material
+- texture
+- logo
+- packaging
+- design details
+
+ABSOLUTE RULE:
+
+The product must remain identical to the reference image.
+
+Do not:
+- redesign
+- improve
+- modify
+- replace
+- create a similar product
+
+Any difference is considered incorrect.
+
+==================================================
+3. CHARACTER REFERENCE LOCK
+==================================================
+
+${characterSection}
+
+==================================================
+4. VISUAL REALISM RULE
+==================================================
+
+The result must look realistic and natural.
+
+Avoid:
+
+- plastic skin
+- perfect AI face
+- unnatural symmetry
+- fake lighting
+- unrealistic object physics
+
+Include:
+
+- natural skin texture
+- micro expression
+- subtle asymmetry
+- realistic material texture
+
+==================================================
+5. CAMERA AND PRODUCTION QUALITY
+==================================================
+
+Create professional production quality.
+
+Consider:
+
+- realistic camera perspective
+- natural depth of field
+- cinematic composition
+- realistic lighting
+- believable environment
+
+Use realistic visual details:
+
+- motion blur where visually appropriate
+- secondary motion where applicable
+- believable weight and momentum
+- natural object interaction
+
+==================================================
+6. STORYBOARD EXECUTION
+==================================================
+
+For the approved scene, follow every production field below exactly:
+
+${sceneStoryboard(scene)}
+
+==================================================
+7. PRODUCT PRESENTATION
+==================================================
+
+The product must remain the main focus.
+
+Show:
+
+- realistic usage
+- natural interaction
+- clear product visibility
+- believable human interaction
+
+==================================================
+8. CLEAN FRAME RULE
+==================================================
+
+Keep every generated frame clean and free from unrequested graphic elements.
+
+Do not add:
+
+- text
+- text layers
+- subtitles
+- captions
+- labels
+- logos
+- watermarks
+- UI overlays
+- stickers
+- random letters, numbers, or symbols
+
+Do not place any written content on screen unless it is physically part of the locked product reference, such as its original packaging or logo. The frame must remain visually clean, focused, and free from distracting AI-generated writing.
+
+==================================================
+9. FINAL QUALITY RULE
+==================================================
+
+The final result should look like:
+
+- professional advertisement
+- authentic creator content
+- real production footage or photography
+
+NOT:
+
+- generic AI output
+- fantasy redesign
+- stock image
+- artificial render
+
+==================================================
+REFERENCE DATA
+==================================================
+
+Product Detail:
+${format(input.productName)} — ${format(input.productDescription)}
+
+Product Category:
+${format(input.category)}
+
+Target Audience:
+${format(input.targetMarket)}
+
+Content Style:
+${format(input.contentStyle)}
+
+Content Angle:
+${contentAngle}
+
+Platform:
+${format(input.platform)}
+
+Duration:
+${format(scene.duration, format(input.videoDuration))}
+
+Storyboard:
+${sceneStoryboard(scene)}
+
+Production Notes:
+${productionNotes}`;
+}
+
+function render() {
+    const scenes = Array.isArray(result.storyboard) ? result.storyboard : [];
+    const selector = $('productionSceneSelect');
+    selector.innerHTML = scenes.map((scene, index) => `<option value="${index}">Scene ${scene.scene || index + 1}</option>`).join('');
+
+    if (!scenes.length) {
+        $('productionPrompt').value = 'Belum ada storyboard UGC. Buat hasil di halaman UGC Data terlebih dahulu.';
+        return;
+    }
+
+    $('productionPrompt').value = build(scenes[0]);
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    input = read('jaja_ugc_input');
+    result = read('jaja_ugc_result');
+    render();
+
+    $('productionSceneSelect').onchange = event => {
+        $('productionPrompt').value = build(result.storyboard[Number(event.target.value)]);
+    };
+    $('refreshPrompt').onclick = () => {
+        $('productionPrompt').value = build(result.storyboard[Number($('productionSceneSelect').value) || 0]);
+    };
+    $('copyPrompt').onclick = async () => {
+        try {
+            await navigator.clipboard.writeText($('productionPrompt').value);
+        } catch {
+            $('productionPrompt').select();
+            document.execCommand('copy');
+        }
+        alert('Master production prompt berhasil disalin.');
+    };
+});
+</script></body></html>

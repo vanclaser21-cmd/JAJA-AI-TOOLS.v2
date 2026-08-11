@@ -361,6 +361,38 @@ grid-template-columns:1fr;
 
 }
 
+.workflow-nav{
+    flex-direction:column;
+    gap:15px;
+}
+
+.back-btn,
+.next-btn{
+    width:100%;
+    text-align:center;
+}
+
+}
+
+@media(max-width:768px){
+
+body{
+    padding:25px 15px;
+}
+
+.container{
+    padding:0;
+}
+
+.card{
+    padding:22px;
+}
+
+.menu-bar a{
+    padding:12px 18px;
+    font-size:14px;
+}
+
 }
 
 .header h1,

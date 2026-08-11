@@ -511,12 +511,86 @@ grid-template-columns:repeat(2,1fr);
 
 }
 
-@media(max-width:520px){
+@media(max-width:768px){
+
+body{
+    padding:20px;
+}
+
+.hero{
+    padding:12px;
+}
+
+.container{
+    padding:0 10px;
+}
 
 .dashboard-grid{
 
 grid-template-columns:1fr;
 
+}
+
+.dash-card{
+    min-height:80px;
+    padding:18px;
+}
+
+.dash-title{
+    font-size:14px;
+}
+
+}
+
+@media(max-width:520px){
+
+body{
+    padding:15px;
+}
+
+.dashboard-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.dash-card{
+    min-height:auto;
+    padding:16px;
+}
+
+.dash-title{
+    font-size:13px;
+}
+
+}
+
+@media(max-width:420px){
+
+.intro h1{
+    font-size:34px;
+}
+
+.header-badge{
+    padding:12px 24px;
+    font-size:22px;
+}
+
+.section-title{
+    gap:14px;
+    margin:28px 0 35px;
+}
+
+.title-card{
+    padding:14px 18px;
+}
+
+.card h2{
+    font-size:26px;
+}
+
+.card p{
+    font-size:15px;
 }
 
 }

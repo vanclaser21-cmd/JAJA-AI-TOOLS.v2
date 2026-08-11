@@ -297,3 +297,40 @@ color:#e8e8e8;
 color:#38bdf8;
 
 }
+
+@media(max-width:768px){
+
+.project-form{
+    max-width:100%;
+    margin:auto;
+    padding:0 12px;
+}
+
+.workflow-info{
+    padding:16px 18px;
+    font-size:14px;
+}
+
+.workflow-nav{
+    flex-direction:column;
+    gap:14px;
+}
+
+.project-form input,
+.project-form select,
+.project-form textarea{
+    font-size:14px;
+}
+
+.project-form textarea{
+    min-height:240px;
+}
+
+.copy-btn,
+.continue-btn,
+.workflow-nav a,
+.workflow-nav button{
+    width:100%;
+}
+
+}

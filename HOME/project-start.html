@@ -7,208 +7,104 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>
-JAJA AI TOOLS - Pabrik Konten
-</title>
-
+<title>JAJA AI TOOLS - Pabrik Konten</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
-
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-
 <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
 
 <link rel="stylesheet" href="../css/style.css">
 <link rel="stylesheet" href="../css/home.css">
 <link rel="stylesheet" href="../css/workflow.css">
 <link rel="stylesheet" href="../css/prompt-library.css">
 
-
 </head>
-
 
 <body>
 
-
 <div class="container">
 
+    <header class="hero">
+        <img src="../assets/header.png" class="hero-banner">
+    </header>
 
-<header class="hero">
+    <!-- MENU BAR -->
+    <div class="dashboard-grid">
+        <a href="../index.html" class="dash-card"><div class="dash-title">HOME</div></a>
+        <a href="https://share.gemini.google/QbgzDM0tAoA4" class="dash-card"><div class="dash-title">CHARACTER GENERATOR</div></a>
+        <a href="#" class="dash-card"><div class="dash-title">MOTION CONTROL</div></a>
+        <a href="prompt-library.html" class="dash-card"><div class="dash-title">PROMPT SIAP PAKAI</div></a>
+        <a href="https://share.gemini.google/ng5XqBzS6Axq" class="dash-card"><div class="dash-title">CHARACTER CLONE</div></a>
+        <a href="https://share.gemini.google/fobBp7W7GUG4" class="dash-card"><div class="dash-title">IMAGE GENERATOR</div></a>
+        <a href="https://share.gemini.google/IsK5VQqklHjA" class="dash-card"><div class="dash-title">UGC KONTEN</div></a>
+        <a href="#" class="dash-card"><div class="dash-title">JAJA BUNDLE</div></a>
+    </div>
 
-<img src="../assets/header.png" class="hero-banner">
-
-</header>
-
-
-<!-- ========================= -->
-<!-- MENU BAR -->
-<!-- ========================= -->
-
-<div class="dashboard-grid">
-
-<a href="../index.html" class="dash-card">
-<div class="dash-title">HOME</div>
-</a>
-
-<a href="character-generator.html" class="dash-card">
-<div class="dash-title">CHARACTER GENERATOR</div>
-</a>
-
-<a href="#" class="dash-card">
-<div class="dash-title">MOTION CONTROL</div>
-</a>
-
-<a href="prompt-library.html" class="dash-card">
-<div class="dash-title">PROMPT SIAP PAKAI</div>
-</a>
-
-<a href="#" class="dash-card">
-<div class="dash-title">CHARACTER CLONE</div>
-</a>
-
-<a href="#" class="dash-card">
-<div class="dash-title">IMAGE GENERATOR</div>
-</a>
-
-<a href="#" class="dash-card">
-<div class="dash-title">UGC KONTEN</div>
-</a>
-
-<a href="#" class="dash-card">
-<div class="dash-title">JAJA BUNDLE</div>
-</a>
-
-</div>
-
-<div class="workflow-info">
-
-<b>ISI SEMUA YANG PERLU DI ISI YA BOSKUUU</b>
-
-<br><br>
-
-ISI AJA KOLOM YANG ADA KAWAN.
-KALO UDAH TINGGAL <b>NEXT</b> AJA BUAT LANJUT KE STEP SELANJUTNYA.
-
-</div>
-
-</div>
+    <div class="workflow-info">
+        <b>ISI SEMUA YANG PERLU DI ISI YA BOSKUUU</b>
+        <br><br>
+        ISI AJA KOLOM YANG ADA KAWAN.
+        KALO UDAH TINGGAL <b>NEXT</b> AJA BUAT LANJUT KE STEP SELANJUTNYA.
+    </div>
 
     <div class="project-form">
 
-<label>Judul Project</label>
-<input id="projectTitle" type="text">
+        <label>Judul Project</label>
+        <input id="projectTitle" type="text">
 
-<label>Lirik Lagu</label>
-<textarea id="lyrics"></textarea>
+        <label>Lirik Lagu</label>
+        <textarea id="lyrics"></textarea>
 
-<label>Genre</label>
-<select id="genre">
+        <label>Genre</label>
+        <select id="genre">
+            <option>Cinematic</option>
+            <option>Drama</option>
+            <option>Romance</option>
+            <option>Action</option>
+            <option>Fantasy</option>
+        </select>
 
-<option>Cinematic</option>
-<option>Drama</option>
-<option>Romance</option>
-<option>Action</option>
-<option>Fantasy</option>
+        <label>Song Duration</label>
+        <input id="duration" type="text" placeholder="Contoh : 3:53">
 
-</select>
+        <label>Aspect Ratio</label>
+        <select id="aspectRatio">
+            <option>9:16 (Vertical)</option>
+            <option>16:9 (Horizontal)</option>
+        </select>
 
-<label>Song Duration</label>
+        <label>Scene Structure</label>
+        <select id="sceneStructure">
+            <option>1 Scene = 1 Shot</option>
+            <option>1 Scene = 2 Shot</option>
+            <option>1 Scene = 3 Shot</option>
+            <option>1 Scene = 4 Shot</option>
+            <option>Custom</option>
+        </select>
 
-<input
-id="duration"
-type="text"
-placeholder="Contoh : 3:53">
+        <label id="customShotLabel" style="display:none;">Jumlah Shot per Scene</label>
+        <input id="customShot" type="number" min="1" max="20" style="display:none;" placeholder="Contoh : 5">
 
-<label>Aspect Ratio</label>
+        <label>Shot Duration</label>
+        <select id="shotDuration">
+            <option>4 Seconds</option>
+            <option>6 Seconds</option>
+            <option>8 Seconds</option>
+            <option>10 Seconds</option>
+        </select>
 
-<select id="aspectRatio">
+        <label>Visual Style</label>
+        <input id="visualStyle" type="text">
 
-<option>9:16 (Vertical)</option>
+        <label>Ide Cerita (Opsional)</label>
+        <textarea id="storyIdea"></textarea>
 
-<option>16:9 (Horizontal)</option>
-
-</select>
-
-
-<label>Scene Structure</label>
-
-<select id="sceneStructure">
-
-<option>1 Scene = 1 Shot</option>
-
-<option>1 Scene = 2 Shot</option>
-
-<option>1 Scene = 3 Shot</option>
-
-<option>1 Scene = 4 Shot</option>
-
-<option>Custom</option>
-
-</select>
-
-<label
-id="customShotLabel"
-style="display:none;">
-
-Jumlah Shot per Scene
-
-</label>
-
-<input
-
-id="customShot"
-
-type="number"
-
-min="1"
-
-max="20"
-
-style="display:none;"
-
-placeholder="Contoh : 5">
-
-</select>
-
-
-<label>Shot Duration</label>
-
-<select id="shotDuration">
-
-<option>4 Seconds</option>
-
-<option>6 Seconds</option>
-
-<option>8 Seconds</option>
-
-<option>10 Seconds</option>
-
-</select>
-
-<label>Visual Style</label>
-<input id="visualStyle" type="text">
-
-<label>Ide Cerita (Opsional)</label>
-<textarea id="storyIdea"></textarea>
-
+        <div class="workflow-nav">
+            <a href="music-clip-maker.html" class="back-btn">⬅ BACK</a>
+            <a href="#" id="nextStep" class="next-btn">NEXT ➜</a>
+        </div>
 
     </div>
-
-<div class="workflow-nav">
-
-    <a href="music-clip-maker.html" class="back-btn">
-        ⬅ BACK
-    </a>
-
-    <a href="#" id="nextStep" class="next-btn">
-        NEXT ➜
-    </a>
-
-</div>
-
-</div>
 
 </div>
 
