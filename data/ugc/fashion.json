@@ -1,0 +1,506 @@
+{
+  "category": "fashion",
+  "brandTone": "stylish dan percaya diri",
+  "templates": {
+    "default": {
+      "hooks": [
+        "Outfit ini bikin look langsung kelihatan niat.",
+        "Cari {{product_name}} yang gampang dipadukan?",
+        "Detail {{product_name}} ini ternyata bikin aku berhenti scroll.",
+        "Satu item yang bikin outfit lebih rapi."
+      ],
+      "ctas": [
+        "Cek {{product_name}} sebelum ukuran favorit habis.",
+        "Simpan dulu buat inspirasi outfit berikutnya.",
+        "Pilih {{product_name}} untuk lengkapi gaya kamu.",
+        "Lihat detail {{product_name}} sekarang."
+      ],
+      "hashtags": [
+        "#fashionindonesia",
+        "#outfitinspiration",
+        "#ootd",
+        "#fashionfind",
+        "#{{product_slug}}",
+        "#rekomendasi"
+      ],
+      "productAnalysis": "{{product_name}} cocok untuk {{target_audience}} yang ingin tampilan praktis dan stylish.",
+      "contentStrategy": "Tampilkan detail produk, cara pakai, lalu hasil look akhir untuk {{platform}}.",
+      "storyboard": [
+        {
+          "duration": "{{scene_duration}}",
+          "shotType": "Close-up produk; detail bahan",
+          "cameraMovement": "Push-in pelan; pan detail",
+          "lens": "50mm",
+          "focus": "{{product_name}}",
+          "position": "Produk di tengah",
+          "visualHook": "Detail {{product_detail}} langsung terlihat",
+          "expression": "Antusias",
+          "bodyLanguage": "Memegang dan merapikan produk",
+          "dialogue": "{{dialogue}}",
+          "productDescription": "{{product_name}}, {{product_detail}}",
+          "lighting": "Soft daylight",
+          "location": "Area outfit rapi"
+        },
+        {
+          "duration": "{{scene_duration}}",
+          "shotType": "Medium shot saat dipakai",
+          "cameraMovement": "Handheld halus",
+          "lens": "35mm",
+          "focus": "Siluet dan detail produk",
+          "position": "Creator menghadap kamera",
+          "visualHook": "Before-after look singkat",
+          "expression": "Percaya diri",
+          "bodyLanguage": "Pose natural",
+          "dialogue": "{{dialogue}}",
+          "productDescription": "{{product_name}} melengkapi outfit",
+          "lighting": "Natural terang",
+          "location": "Cermin atau kamar"
+        },
+        {
+          "duration": "{{scene_duration}}",
+          "shotType": "Close-up hasil akhir",
+          "cameraMovement": "Orbit pendek",
+          "lens": "50mm",
+          "focus": "{{product_name}} pada look akhir",
+          "position": "Produk di foreground",
+          "visualHook": "Tekstur dan finishing terlihat",
+          "expression": "Puas",
+          "bodyLanguage": "Menunjukkan detail",
+          "dialogue": "{{dialogue}}",
+          "productDescription": "{{product_name}} untuk gaya harian",
+          "lighting": "Soft highlight",
+          "location": "Sudut lifestyle"
+        }
+      ]
+    }
+  },
+  "personalities": [
+    {
+      "name": "excited creator",
+      "dialogues": [
+        "Guys akhirnya datang juga {{product_name}}.",
+        "Aku nggak sabar nunjukin detail {{product_name}} ini.",
+        "Oke, ini lebih cakep dari yang aku bayangin."
+      ]
+    },
+    {
+      "name": "honest review",
+      "dialogues": [
+        "Jujur awalnya aku agak ragu sama {{product_name}}.",
+        "Aku pakai dulu biar nggak asal ngomong.",
+        "Setelah dicoba, detailnya ternyata kepakai banget."
+      ]
+    },
+    {
+      "name": "aesthetic creator",
+      "dialogues": [
+        "Ini tipe {{product_name}} yang enak dilihat dari dekat.",
+        "Lihat detail kecilnya, satisfying banget.",
+        "Vibenya rapi tanpa kelihatan maksa."
+      ]
+    },
+    {
+      "name": "casual daily user",
+      "dialogues": [
+        "Awalnya cuma iseng coba {{product_name}}.",
+        "Ternyata gampang masuk ke rutinitas aku.",
+        "Ini yang bikin aku pengin pakai lagi."
+      ]
+    },
+    {
+      "name": "surprise reaction",
+      "dialogues": [
+        "Eh, kok {{product_name}} ini beda dari ekspektasi aku?",
+        "Baru lihat detailnya aku langsung paham kenapa ramai.",
+        "Oke, ini kejutan yang menyenangkan."
+      ]
+    }
+  ],
+  "variations": {
+    "styles": {
+      "Hard Selling": [
+        {
+          "id": "hard-selling-1",
+          "storyboardPattern": [
+            "curiosity close-up",
+            "detail reveal",
+            "personal verdict"
+          ],
+          "visualDirection": "natural handheld framing with subtle motion blur and realistic focus pull"
+        },
+        {
+          "id": "hard-selling-2",
+          "storyboardPattern": [
+            "relatable problem",
+            "product arrival",
+            "natural reaction"
+          ],
+          "visualDirection": "soft window light, tactile close-up, gentle secondary motion"
+        },
+        {
+          "id": "hard-selling-3",
+          "storyboardPattern": [
+            "first-touch moment",
+            "feature detail",
+            "final opinion"
+          ],
+          "visualDirection": "phone-camera perspective, slight asymmetry, authentic micro expression"
+        },
+        {
+          "id": "hard-selling-4",
+          "storyboardPattern": [
+            "before-after context",
+            "real use moment",
+            "why it stays useful"
+          ],
+          "visualDirection": "slow push-in, real fabric or object movement, grounded composition"
+        },
+        {
+          "id": "hard-selling-5",
+          "storyboardPattern": [
+            "quick visual hook",
+            "texture or feature proof",
+            "soft next step"
+          ],
+          "visualDirection": "candid lifestyle angle with natural weight, momentum, and object interaction"
+        }
+      ],
+      "Soft Selling": [
+        {
+          "id": "soft-selling-1",
+          "storyboardPattern": [
+            "curiosity close-up",
+            "detail reveal",
+            "personal verdict"
+          ],
+          "visualDirection": "natural handheld framing with subtle motion blur and realistic focus pull"
+        },
+        {
+          "id": "soft-selling-2",
+          "storyboardPattern": [
+            "relatable problem",
+            "product arrival",
+            "natural reaction"
+          ],
+          "visualDirection": "soft window light, tactile close-up, gentle secondary motion"
+        },
+        {
+          "id": "soft-selling-3",
+          "storyboardPattern": [
+            "first-touch moment",
+            "feature detail",
+            "final opinion"
+          ],
+          "visualDirection": "phone-camera perspective, slight asymmetry, authentic micro expression"
+        },
+        {
+          "id": "soft-selling-4",
+          "storyboardPattern": [
+            "before-after context",
+            "real use moment",
+            "why it stays useful"
+          ],
+          "visualDirection": "slow push-in, real fabric or object movement, grounded composition"
+        },
+        {
+          "id": "soft-selling-5",
+          "storyboardPattern": [
+            "quick visual hook",
+            "texture or feature proof",
+            "soft next step"
+          ],
+          "visualDirection": "candid lifestyle angle with natural weight, momentum, and object interaction"
+        }
+      ],
+      "Lifestyle": [
+        {
+          "id": "lifestyle-1",
+          "storyboardPattern": [
+            "curiosity close-up",
+            "detail reveal",
+            "personal verdict"
+          ],
+          "visualDirection": "natural handheld framing with subtle motion blur and realistic focus pull"
+        },
+        {
+          "id": "lifestyle-2",
+          "storyboardPattern": [
+            "relatable problem",
+            "product arrival",
+            "natural reaction"
+          ],
+          "visualDirection": "soft window light, tactile close-up, gentle secondary motion"
+        },
+        {
+          "id": "lifestyle-3",
+          "storyboardPattern": [
+            "first-touch moment",
+            "feature detail",
+            "final opinion"
+          ],
+          "visualDirection": "phone-camera perspective, slight asymmetry, authentic micro expression"
+        },
+        {
+          "id": "lifestyle-4",
+          "storyboardPattern": [
+            "before-after context",
+            "real use moment",
+            "why it stays useful"
+          ],
+          "visualDirection": "slow push-in, real fabric or object movement, grounded composition"
+        },
+        {
+          "id": "lifestyle-5",
+          "storyboardPattern": [
+            "quick visual hook",
+            "texture or feature proof",
+            "soft next step"
+          ],
+          "visualDirection": "candid lifestyle angle with natural weight, momentum, and object interaction"
+        }
+      ],
+      "Review": [
+        {
+          "id": "review-1",
+          "storyboardPattern": [
+            "curiosity close-up",
+            "detail reveal",
+            "personal verdict"
+          ],
+          "visualDirection": "natural handheld framing with subtle motion blur and realistic focus pull"
+        },
+        {
+          "id": "review-2",
+          "storyboardPattern": [
+            "relatable problem",
+            "product arrival",
+            "natural reaction"
+          ],
+          "visualDirection": "soft window light, tactile close-up, gentle secondary motion"
+        },
+        {
+          "id": "review-3",
+          "storyboardPattern": [
+            "first-touch moment",
+            "feature detail",
+            "final opinion"
+          ],
+          "visualDirection": "phone-camera perspective, slight asymmetry, authentic micro expression"
+        },
+        {
+          "id": "review-4",
+          "storyboardPattern": [
+            "before-after context",
+            "real use moment",
+            "why it stays useful"
+          ],
+          "visualDirection": "slow push-in, real fabric or object movement, grounded composition"
+        },
+        {
+          "id": "review-5",
+          "storyboardPattern": [
+            "quick visual hook",
+            "texture or feature proof",
+            "soft next step"
+          ],
+          "visualDirection": "candid lifestyle angle with natural weight, momentum, and object interaction"
+        }
+      ],
+      "Testimonial": [
+        {
+          "id": "testimonial-1",
+          "storyboardPattern": [
+            "curiosity close-up",
+            "detail reveal",
+            "personal verdict"
+          ],
+          "visualDirection": "natural handheld framing with subtle motion blur and realistic focus pull"
+        },
+        {
+          "id": "testimonial-2",
+          "storyboardPattern": [
+            "relatable problem",
+            "product arrival",
+            "natural reaction"
+          ],
+          "visualDirection": "soft window light, tactile close-up, gentle secondary motion"
+        },
+        {
+          "id": "testimonial-3",
+          "storyboardPattern": [
+            "first-touch moment",
+            "feature detail",
+            "final opinion"
+          ],
+          "visualDirection": "phone-camera perspective, slight asymmetry, authentic micro expression"
+        },
+        {
+          "id": "testimonial-4",
+          "storyboardPattern": [
+            "before-after context",
+            "real use moment",
+            "why it stays useful"
+          ],
+          "visualDirection": "slow push-in, real fabric or object movement, grounded composition"
+        },
+        {
+          "id": "testimonial-5",
+          "storyboardPattern": [
+            "quick visual hook",
+            "texture or feature proof",
+            "soft next step"
+          ],
+          "visualDirection": "candid lifestyle angle with natural weight, momentum, and object interaction"
+        }
+      ],
+      "Problem Solution": [
+        {
+          "id": "problem-solution-1",
+          "storyboardPattern": [
+            "curiosity close-up",
+            "detail reveal",
+            "personal verdict"
+          ],
+          "visualDirection": "natural handheld framing with subtle motion blur and realistic focus pull"
+        },
+        {
+          "id": "problem-solution-2",
+          "storyboardPattern": [
+            "relatable problem",
+            "product arrival",
+            "natural reaction"
+          ],
+          "visualDirection": "soft window light, tactile close-up, gentle secondary motion"
+        },
+        {
+          "id": "problem-solution-3",
+          "storyboardPattern": [
+            "first-touch moment",
+            "feature detail",
+            "final opinion"
+          ],
+          "visualDirection": "phone-camera perspective, slight asymmetry, authentic micro expression"
+        },
+        {
+          "id": "problem-solution-4",
+          "storyboardPattern": [
+            "before-after context",
+            "real use moment",
+            "why it stays useful"
+          ],
+          "visualDirection": "slow push-in, real fabric or object movement, grounded composition"
+        },
+        {
+          "id": "problem-solution-5",
+          "storyboardPattern": [
+            "quick visual hook",
+            "texture or feature proof",
+            "soft next step"
+          ],
+          "visualDirection": "candid lifestyle angle with natural weight, momentum, and object interaction"
+        }
+      ],
+      "Unboxing": [
+        {
+          "id": "unboxing-1",
+          "storyboardPattern": [
+            "curiosity close-up",
+            "detail reveal",
+            "personal verdict"
+          ],
+          "visualDirection": "natural handheld framing with subtle motion blur and realistic focus pull"
+        },
+        {
+          "id": "unboxing-2",
+          "storyboardPattern": [
+            "relatable problem",
+            "product arrival",
+            "natural reaction"
+          ],
+          "visualDirection": "soft window light, tactile close-up, gentle secondary motion"
+        },
+        {
+          "id": "unboxing-3",
+          "storyboardPattern": [
+            "first-touch moment",
+            "feature detail",
+            "final opinion"
+          ],
+          "visualDirection": "phone-camera perspective, slight asymmetry, authentic micro expression"
+        },
+        {
+          "id": "unboxing-4",
+          "storyboardPattern": [
+            "before-after context",
+            "real use moment",
+            "why it stays useful"
+          ],
+          "visualDirection": "slow push-in, real fabric or object movement, grounded composition"
+        },
+        {
+          "id": "unboxing-5",
+          "storyboardPattern": [
+            "quick visual hook",
+            "texture or feature proof",
+            "soft next step"
+          ],
+          "visualDirection": "candid lifestyle angle with natural weight, momentum, and object interaction"
+        }
+      ],
+      "ASMR": [
+        {
+          "id": "asmr-1",
+          "storyboardPattern": [
+            "curiosity close-up",
+            "detail reveal",
+            "personal verdict"
+          ],
+          "visualDirection": "natural handheld framing with subtle motion blur and realistic focus pull"
+        },
+        {
+          "id": "asmr-2",
+          "storyboardPattern": [
+            "relatable problem",
+            "product arrival",
+            "natural reaction"
+          ],
+          "visualDirection": "soft window light, tactile close-up, gentle secondary motion"
+        },
+        {
+          "id": "asmr-3",
+          "storyboardPattern": [
+            "first-touch moment",
+            "feature detail",
+            "final opinion"
+          ],
+          "visualDirection": "phone-camera perspective, slight asymmetry, authentic micro expression"
+        },
+        {
+          "id": "asmr-4",
+          "storyboardPattern": [
+            "before-after context",
+            "real use moment",
+            "why it stays useful"
+          ],
+          "visualDirection": "slow push-in, real fabric or object movement, grounded composition"
+        },
+        {
+          "id": "asmr-5",
+          "storyboardPattern": [
+            "quick visual hook",
+            "texture or feature proof",
+            "soft next step"
+          ],
+          "visualDirection": "candid lifestyle angle with natural weight, momentum, and object interaction"
+        }
+      ]
+    },
+    "visual": [
+      "natural handheld framing with subtle motion blur and realistic focus pull",
+      "soft window light, tactile close-up, gentle secondary motion",
+      "phone-camera perspective, slight asymmetry, authentic micro expression",
+      "slow push-in, real fabric or object movement, grounded composition",
+      "candid lifestyle angle with natural weight, momentum, and object interaction"
+    ]
+  }
+}

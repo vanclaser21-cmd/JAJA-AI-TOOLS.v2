@@ -1,0 +1,195 @@
+{
+  "category": "service",
+  "brandTone": "informatif, ramah, dan mudah diikuti",
+  "templates": {
+    "default": {
+      "hooks": [
+        "Masih bingung mulai {{product_name}} dari mana?",
+        "Aku baru nemu cara belajar {{product_name}} yang lebih gampang.",
+        "Kalau kamu mau paham {{product_name}}, lihat langkah ini dulu.",
+        "Ini alasan {{product_name}} cocok untuk yang baru mulai."
+      ],
+      "ctas": [
+        "Simpan panduan {{product_name}} ini untuk dipelajari nanti.",
+        "Cek {{product_name}} kalau kamu ingin mulai dengan langkah jelas.",
+        "Bagikan ke teman yang sedang belajar {{product_name}}.",
+        "Pelajari detail {{product_name}} sesuai kebutuhanmu."
+      ],
+      "hashtags": [
+        "#belajarbareng",
+        "#tipsdantrik",
+        "#tutorialindonesia",
+        "#edukasidigital",
+        "#{{product_slug}}",
+        "#kontenedukasi"
+      ],
+      "productAnalysis": "{{product_name}} membantu {{target_audience}} memahami materi atau layanan dengan langkah yang lebih terarah.",
+      "contentStrategy": "Mulai dari kendala audiens, tampilkan langkah di layar, lalu beri hasil atau langkah lanjut di {{platform}}.",
+      "storyboard": [
+        {
+          "duration": "{{scene_duration}}",
+          "shotType": "Medium close-up creator dengan layar pendukung",
+          "cameraMovement": "Push-in ringan ke creator dan layar",
+          "lens": "35mm",
+          "focus": "Creator dan topik {{product_name}}",
+          "position": "Creator di samping layar atau teks",
+          "visualHook": "Masalah umum audiens muncul sebagai teks singkat",
+          "expression": "Ramah dan memahami",
+          "bodyLanguage": "Menunjuk poin penting pada layar",
+          "dialogue": "{{dialogue}}",
+          "productDescription": "{{product_name}}: {{product_detail}}",
+          "lighting": "Natural terang dan bersih",
+          "location": "Meja kerja atau area belajar rapi"
+        },
+        {
+          "duration": "{{scene_duration}}",
+          "shotType": "Over-the-shoulder layar atau rekam layar",
+          "cameraMovement": "Gerak stabil mengikuti langkah",
+          "lens": "50mm",
+          "focus": "Langkah tutorial atau fitur utama",
+          "position": "Layar di pusat frame",
+          "visualHook": "Langkah praktis terlihat jelas dan berurutan",
+          "expression": "Fokus dan membantu",
+          "bodyLanguage": "Menavigasi layar secara natural",
+          "dialogue": "{{dialogue}}",
+          "productDescription": "Demonstrasi {{product_name}} untuk kebutuhan audiens",
+          "lighting": "Soft daylight tanpa pantulan layar",
+          "location": "Ruang kerja atau setup tutorial"
+        },
+        {
+          "duration": "{{scene_duration}}",
+          "shotType": "Medium shot creator dan hasil di layar",
+          "cameraMovement": "Pan pendek menuju hasil atau ringkasan",
+          "lens": "35mm",
+          "focus": "Hasil belajar dan langkah berikutnya",
+          "position": "Creator menghadap kamera, hasil di samping",
+          "visualHook": "Ringkasan manfaat atau hasil ditampilkan",
+          "expression": "Yakin dan mengajak",
+          "bodyLanguage": "Memberi gestur ajakan sederhana",
+          "dialogue": "{{dialogue}}",
+          "productDescription": "{{product_name}} sebagai panduan untuk {{target_audience}}",
+          "lighting": "Natural clean",
+          "location": "Sudut belajar atau studio sederhana"
+        }
+      ]
+    }
+  },
+  "personalities": [
+    {
+      "name": "tutorial guide",
+      "dialogues": [
+        "Kalau kamu masih bingung mulai, aku tunjukin cara paling gampangnya.",
+        "Di bagian ini, ikuti langkahnya satu per satu dulu ya.",
+        "Setelah paham dasarnya, kamu bisa lanjut praktik sendiri."
+      ]
+    },
+    {
+      "name": "helpful educator",
+      "dialogues": [
+        "Aku dulu juga bingung di bagian ini, ternyata kuncinya simpel.",
+        "Lihat yang di layar, ini bagian yang perlu kamu perhatikan.",
+        "Simpan dulu supaya nanti kamu bisa ulang langkahnya."
+      ]
+    },
+    {
+      "name": "practical explainer",
+      "dialogues": [
+        "Biar nggak muter-muter, mulai dari bagian ini dulu.",
+        "Yang penting, kamu pahami fungsi langkah ini sebelum lanjut.",
+        "Kalau sudah sampai sini, prosesnya bakal jauh lebih mudah."
+      ]
+    }
+  ],
+  "variations": {
+    "styles": {
+      "Hard Selling": [
+        {
+          "id": "service-hard-1",
+          "storyboardPattern": [
+            "masalah audiens",
+            "solusi terarah",
+            "langkah lanjut"
+          ],
+          "visualDirection": "framing edukatif dengan teks poin penting dan gerakan kamera natural"
+        }
+      ],
+      "Soft Selling": [
+        {
+          "id": "service-soft-1",
+          "storyboardPattern": [
+            "pengalaman bingung",
+            "penjelasan sederhana",
+            "ajakan belajar"
+          ],
+          "visualDirection": "tone ramah, layar jelas, dan tempo penjelasan santai"
+        }
+      ],
+      "Lifestyle": [
+        {
+          "id": "service-life-1",
+          "storyboardPattern": [
+            "rutinitas belajar",
+            "praktik singkat",
+            "hasil berguna"
+          ],
+          "visualDirection": "setup kerja realistis dengan creator berinteraksi pada layar"
+        }
+      ],
+      "Review": [
+        {
+          "id": "service-review-1",
+          "storyboardPattern": [
+            "kebutuhan pengguna",
+            "fitur atau materi",
+            "kesimpulan jujur"
+          ],
+          "visualDirection": "fokus pada pengalaman penggunaan dan bukti di layar"
+        }
+      ],
+      "Testimonial": [
+        {
+          "id": "service-testimonial-1",
+          "storyboardPattern": [
+            "masalah awal",
+            "proses belajar",
+            "perubahan yang dirasakan"
+          ],
+          "visualDirection": "ekspresi autentik dengan dokumentasi proses yang jelas"
+        }
+      ],
+      "Problem Solution": [
+        {
+          "id": "service-solution-1",
+          "storyboardPattern": [
+            "masalah spesifik",
+            "langkah penyelesaian",
+            "hasil atau tindak lanjut"
+          ],
+          "visualDirection": "alur tutorial visual dari masalah ke solusi secara berurutan"
+        }
+      ],
+      "Unboxing": [
+        {
+          "id": "service-reveal-1",
+          "storyboardPattern": [
+            "reveal materi",
+            "jelajah isi atau fitur",
+            "cara mulai"
+          ],
+          "visualDirection": "reveal dashboard, materi, atau halaman panduan secara jelas"
+        }
+      ],
+      "ASMR": [
+        {
+          "id": "service-visual-1",
+          "storyboardPattern": [
+            "visual pembuka",
+            "detail layar",
+            "ringkasan visual"
+          ],
+          "visualDirection": "prioritaskan visual layar, teks singkat, dan transisi lembut tanpa arahan audio"
+        }
+      ]
+    }
+  }
+}
