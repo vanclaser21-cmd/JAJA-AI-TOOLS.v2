@@ -414,6 +414,28 @@ margin:0;
 
 }
 
+.home-notice{
+width:100%;
+max-width:760px;
+margin-top:20px;
+padding:18px 20px;
+border:1px solid #ef4444;
+border-radius:14px;
+background:rgba(127,29,29,.3);
+color:#fca5a5;
+font-size:14px;
+line-height:1.7;
+text-align:center;
+}
+
+.home-notice strong{
+color:#f87171;
+}
+
+.home-notice p + p{
+margin-top:12px;
+}
+
 /* ==========================
 HOME DASHBOARD
 ========================== */
